@@ -78,6 +78,22 @@
             margin-bottom: 20px;
         }
 
+        .img-menu {
+            width: auto;
+            height: 70px;
+        }
+
+        .img-entrada {
+            width: 50px;
+            height: 50px;
+        }
+
+        .lista {
+            margin-left: 5px;
+        }
+
+
+
         /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -214,6 +230,12 @@
                 display: none;
             }
         }
+
+        td,
+        th {
+            text-align: center !important;
+            vertical-align: middle !important;
+        }
     </style>
 
 </head>
@@ -287,77 +309,84 @@
                 <span>Toggle Sidebar</span>
             </button>
 
-            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tiempo</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-md-2"><img
+                                src="https://d25rq8gxcq0p71.cloudfront.net/language-guide/758/pepperoni%20pizza.jpg"
+                                alt="" class="img-menu"> </td>
+                        <td class="col-md-3">Mark</td>
+                        <td class="col-md-2">Otto</td>
+                        <td class="col-md-3">@mdo</td>
+                        <td class="col-md-1"><img src="https://img.icons8.com/plasticine/2x/delete-sign.png" alt=""
+                                style="width: 50px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2"><img
+                                src="https://d25rq8gxcq0p71.cloudfront.net/language-guide/758/pepperoni%20pizza.jpg"
+                                alt="" class="img-menu"> </td>
+                        <td class="col-md-3">Mark</td>
+                        <td class="col-md-2">Otto</td>
+                        <td class="col-md-3">@mdo</td>
+                        <td class="col-md-1"><img src="https://img.icons8.com/plasticine/2x/delete-sign.png" alt=""
+                                style="width: 50px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2"><img
+                                src="https://d25rq8gxcq0p71.cloudfront.net/language-guide/758/pepperoni%20pizza.jpg"
+                                alt="" class="img-menu"> </td>
+                        <td class="col-md-3">Mark</td>
+                        <td class="col-md-2">Otto</td>
+                        <td class="col-md-3">@mdo</td>
+                        <td class="col-md-1"><img src="https://img.icons8.com/plasticine/2x/delete-sign.png" alt=""
+                                style="width: 50px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
-    </script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
-    </script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
-    </script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+        </script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
             });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
